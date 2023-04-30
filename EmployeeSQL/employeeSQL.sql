@@ -4,7 +4,7 @@ ALTER DATABASE "EmployeeSQL" SET datestyle = "ISO, MDY";
 -- Create employees table with emp_no as PK. Use Table Import/Export to fill table from csv
 CREATE TABLE employees (
 	emp_no INT PRIMARY KEY,
-	emp_title_id CHAR(10),
+	emp_title_id NOT NULL CHAR(10),
 	birth_date DATE,
 	first_name VARCHAR(255),
 	last_name VARCHAR(255),
@@ -47,7 +47,7 @@ CREATE TABLE dept_emp (
 -- dept_no many to one with department.dept_no. Use Table Import/Export to fill table from csv.
 CREATE TABLE dept_manager (
   	emp_no INT PRIMARY KEY REFERENCES employees (emp_no),
-  	dept_no CHAR(10) REFERENCES departments (dept_no)
+  	dept_no CHAR(10) NOT NULL REFERENCES departments (dept_no)
 );
 
 -- List the employee number, last name, first name, sex, and salary of each employee
@@ -123,4 +123,3 @@ SELECT last_name, COUNT(emp_no)
 FROM employees
 GROUP BY last_name
 ORDER BY COUNT DESC;
-
