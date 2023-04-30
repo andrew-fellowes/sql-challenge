@@ -34,7 +34,7 @@ ERD SQL output: [QuickDBD-employeeSQL.sql](./EmployeeSQL/QuickDBD-employeeSQL.sq
 
 ### 2. Data Engineering
 
-Lines 1 to 51 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) create the tables. Data was imported int each table using the **pgadmin** *Table Import/Export data* menu.
+Lines 1 to 51 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) create the tables. Data was imported into each table using the **pgadmin** *Table Import/Export data* menu.
 
 ### 3. Data Analysis
 
@@ -42,20 +42,35 @@ Lines 52 to 125 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) answer the follo
 
 1. List the employee number, last name, first name, sex, and salary of each employee.
 
+![Screenshot_1 2023-04-29 231917.png](./Screenshot_1%202023-04-29%20231917.png)
 
 2. List the first name, last name, and hire date for the employees who were hired in 1986.
 
+![Screenshot_2 2023-04-29 232015.png](./Screenshot_2%202023-04-29%20232015.png)
+
 3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
+
+![Screenshot_3 2023-04-29 232245.png](./Screenshot_3%202023-04-29%20232245.png)
 
 4. List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
 
+![Screenshot_4 2023-04-29 232347.png](./Screenshot_4%202023-04-29%20232347.png)
+
 5. List the first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
+
+![Screenshot_5 2023-04-29 232443.png](./Screenshot_5%202023-04-29%20232443.png)
 
 6. List each employee in the Sales department, including their employee number, last name, and first name.
 
+![Screenshot_6 2023-04-29 232523.png](./Screenshot_6%202023-04-29%20232523.png)
+
 7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
 
+![Screenshot_7 2023-04-29 232607.png](./Screenshot_7%202023-04-29%20232607.png)
+
 8. List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
+
+![Screenshot_8 2023-04-29 232650](./Screenshot_8%202023-04-29%20232650.png)
 
 ### 4. Bonus
 
