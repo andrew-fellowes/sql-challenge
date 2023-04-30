@@ -1,6 +1,6 @@
 # SQL-Challenge
 
- The assignment is to do a research project about people who were employed at the fictitious company **Pewlett Hackard** during the 1980s and 1990s.
+ This assignment requires students to do a research project about people who were employed at the fictitious company **Pewlett Hackard** during the 1980s and 1990s.
 
 ---
 
@@ -16,7 +16,7 @@ Create a table schema in **pgadmin** and import each csv file into corresponding
 
 ### 3. Data Analysis
 
-Perform a series of SQL queries
+Perform a series of SQL queries based on questions provided
 
 ### 4. Bonus
 
@@ -38,7 +38,7 @@ Lines 1 to 51 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) create the tables.
 
 ### 3. Data Analysis
 
-Lines 52 to 125 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) answer the following questions (an image of first 10 lines of the pgadin output is shown for each question)
+Lines 52 to 125 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) answer the following questions (an image of first 10 lines of the **pgadmin** output is shown for each question)
 
 1. List the employee number, last name, first name, sex, and salary of each employee.
 
@@ -61,3 +61,8 @@ Lines 52 to 125 of [EmployeeSQL](./EmployeeSQL/employeeSQL.sql) answer the follo
 
 A jupyter notebook [EmployeeSQLAlchemy.ipynb](./EmployeeSQLAlchemy.ipynb) was created in which the employees table was created in [EmployeeSQL/PewlettHackard.sqlite](./EmployeeSQL/PewlettHackard.sqlite), an SQLite database, by importing the [employees.csv](./EmployeeSQL/employees.csv) file into a pandas dataframe and writing to an SQL table object using the **SQLalchemy** library. Query number 2 above was performed on the database. The output from VSCode is shown below.
 ![VSCode screen grab](./VSCode_grab.png)
+
+## Acknowledgements
+- Advice on overcoming postgreSQL DATESTYLE incompatibility when importing the employees.csv file was gratefully received on Slack from [@Henry Leighton](https://mon-data-feb-2023.slack.com/archives/C04FHDYRLFM/p1682740802239079)
+- *Customizing date parser* in [Tricks to parse date columns with Pandas read_csv()
+](https://github.com/BindiChen/machine-learning/blob/main/data-analysis/012-parse-date-with-read_csv/parse-date-column-with-read_csv.ipynb) was used to overcome the same incompatibility when reading employees.csv date fields into pandas for populating the employees table in the bonus jupyter notebook.
